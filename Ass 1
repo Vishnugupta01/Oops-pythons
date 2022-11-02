@@ -1,0 +1,36 @@
+class A:
+    def __init__(self,branch,section,techinical,name) :
+        self.branch=branch
+        self.section=section
+        self.techinical=techinical
+        self.name=name
+        
+    def br(self):
+        print("branch is :",self.branch)
+
+class B(A):
+        
+    def pr(self):
+        print("section is :",self.section)
+        
+class C(B):
+        
+    def s1(self):
+        print("techinical society is :",self.techinical)
+        
+class D(B):
+        
+        
+    def s2(self):
+        print(" No cultural society involvment")
+        
+class E(C,D):
+        
+    def info(self):
+        print("name is :",self.name)
+a=E("csit","s17","brl","Vishnu gupta")
+a.info()
+a.s1()
+a.s2()
+a.pr()
+a.br()
